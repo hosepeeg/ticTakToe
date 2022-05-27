@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*------------body------------*/
+.turn{
+    text-align: center;
+    padding: 20px;
+    font-size: 50px;
+}
+
+.board{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 450px;
+    height: 450px;
+    border: 2px solid black;
+    margin: 0px auto;
+}
+
+.cell{
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    cursor: pointer;
+    text-align: center;
+    font-size: 100px;
+    line-height: 1.4;
+}
+/*------------body------------*/
