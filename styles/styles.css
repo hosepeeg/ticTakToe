@@ -4,26 +4,47 @@
     margin: 0px;
 }
 
+:root{
+    --header-background-color: #416a59;
+    --main-background-color: #f5eec2;
+    --font-color: #aaf7d7;
+    --grid-background-color: #fffbe0;
+    --font-style: 'Varela Round', sans-serif;
+}
+
+html{
+    background-color: var(--main-background-color);
+}
+
 /*------------Header------------*/
 
 .header{
     padding: 20px;
-    border-bottom: 3px solid;
+    border-bottom: 3px black solid;
+    background-color: var(--header-background-color);
+    color: var(--font-color)
 }
 
 .Title{
+    font-family: var(--font-style);
     font-size: 100px;
     text-align: center;
 }
 
 /*------------Main------------*/
+.main{
+    background-color: var(--main-background-color);
+}
+
 .turn{
     text-align: center;
     padding: 20px;
     font-size: 50px;
+    font-family: var(--font-style);
 }
 
 .board{
+    background-color: var(--grid-background-color);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -34,6 +55,7 @@
 }
 
 .cell{
+    font-family: var(--font-style);
     border: 1px solid black;
     cursor: pointer;
     text-align: center;
@@ -49,14 +71,24 @@
 }
 
 button{
+    font-family: var(--font-style);
+    background-color: var(--header-background-color);
+    color: var(--font-color);
     padding: 10px 20px;
     font-size: 25px;
+    border-radius: 7px;
 }
 /*------------Footer------------*/
 
 .footer{
+    background-color: var(--main-background-color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
     font-size: 18px;
 }
 
