@@ -16,13 +16,36 @@ html{
     background-color: var(--main-background-color);
 }
 
+/*------------Popup------------*/
+
+.popup{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    background-color: var(--grid-background-color);
+
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    font-family: "Poppins", sans-serif;
+}
+
+.popup h1{
+    margin-top: 20vh;
+}
+
+.click{
+    width: 25vw;
+}
+
 /*------------Header------------*/
 
 .header{
     padding: 20px;
     border-bottom: 3px black solid;
     background-color: var(--header-background-color);
-    color: var(--font-color)
+    color: var(--font-color);
 }
 
 .Title{
@@ -100,3 +123,4 @@ img{
     width: 25px;
     height: 25px;
 }
+
