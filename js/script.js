@@ -75,7 +75,7 @@ function handleResultValidation() {
 }
 
 const isValidAction = (cell) => {
-    if (cell.innerText === 'X' || DocumentTimeline.innerText === 'O'){
+    if (cell.innerText === 'X' || cell.innerText === 'O'){
         return false;
     }
     return true;
