@@ -8,12 +8,12 @@ const playerDisplay = document.querySelector(".turn");
 
 
 //-------------------creating global variables-------------------
-let versus = "";
+let winnerText = "";
 let board = ["", "", "", "", "", "", "", "", ""]
 let currentPlayer = 'X';
 let isGameActive = true;
-const PLAYERX_WON = 'Congrats! Player X wins!';
-const PLAYERO_WON = 'Congrats! Player O wins!';
+const PLAYERX_WON = 'Player X wins!';
+const PLAYERO_WON = 'Player O wins!';
 
 /*
     Indexes in board (visual)
@@ -65,7 +65,7 @@ function handleResultValidation() {
     }
 
     if (roundWon) {
-        alert(currentPlayer === 'X' ? PLAYERX_WON : PLAYERO_WON);
+        winnerText = currentPlayer === 'X' ? PLAYERX_WON : PLAYERO_WON;
         isGameActive = false;
         return;
     }
@@ -102,6 +102,8 @@ const userAction = (cell, index) => {
         handleResultValidation();
         changePlayer();
     }
+    if(isGameActive === false)
+        playerDisplay.innerText = winnerText;
 }
 
 cells.forEach( (cell, index) => {
