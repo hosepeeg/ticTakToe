@@ -12,16 +12,23 @@
     <title>Tic Tac Toe</title>
 </head>
 <body>
+    <div class="popup">
+        <h1>Choose your opponent!</h1>
+        <button id="player" class="click" type="button">Player</button>
+        <button id="AI" class="click" type="button">AI</button>
+        <p>AI button is still WIP, currently only PvP works.</p>
+    </div>
+
     <header class="header">
         <h1 class="Title">Tic-Tac-Toe</h1>
     </header>
 
     <main class="main">
 
-        <div class="turn">Player X's turn</div>
+        <div class="turn playerX">Player X's turn</div>
 
         <div class="board">
-            <div class="cell">X</div>
+            <div class="cell"></div>
             <div class="cell"></div>
             <div class="cell"></div>
             <div class="cell"></div>
@@ -34,7 +41,6 @@
 
         <div class="restart">
             <button class="reset-button" id="reset-button">Restart</button>
-            <button class="mode-button" id="mode-button">Player Vs AI </button>
         </div>
 
     </main>
